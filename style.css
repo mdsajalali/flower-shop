@@ -84,9 +84,10 @@
 
 .feature-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .feature-card__one {
@@ -369,11 +370,17 @@
   }
 
   .banner-title {
-  font-size: 40px;
+    font-size: 40px;
+  }
+
+  .banner-img {
+    width: 400px;
+    margin-top: 50px;
+  }
 }
 
-.banner-img {
-  width: 400px;
-  margin-top: 50px;
-}
+@media screen and (max-width: 850px) {
+  .feature-card__two {
+    margin: 50px 0;
+  }
 }
