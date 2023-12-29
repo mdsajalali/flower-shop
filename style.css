@@ -179,6 +179,8 @@
 
 .sales-content {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
   justify-content: space-around;
   text-align: center;
@@ -385,4 +387,8 @@
   .feature-card__two {
     margin: 50px 0;
   }
+
+  .sales-content img {
+  width: 250px;
+}
 }
