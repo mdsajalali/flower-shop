@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  border: 1px solid red;
 }
 
 /* shared style */
@@ -291,6 +292,7 @@
 .contact {
   background: #fdeef1;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -395,6 +397,14 @@
   .instagram-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .name-section {
+    display: block;
+  }
+
+  .email-phone-section {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -408,5 +418,13 @@
 
   .instagram-content {
     grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 0;
+  }
+  
+  .contact input {
+    width: 300px;
   }
 }
