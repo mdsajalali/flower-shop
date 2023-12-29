@@ -11,6 +11,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn-primary {
@@ -360,4 +361,19 @@
 .copy-right {
   color: gray;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .banner-title {
+  font-size: 40px;
+}
+
+.banner-img {
+  width: 400px;
+  margin-top: 50px;
+}
 }
